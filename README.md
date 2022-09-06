@@ -1,2 +1,2 @@
 # Terminal-Futures
-Command-line game for learning terminal and git hygiene.
+An interactive story/quiz game for learning git PR hygiene.

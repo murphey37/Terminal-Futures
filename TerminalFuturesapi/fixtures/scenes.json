@@ -1,0 +1,21 @@
+[
+    {
+        "model": "TerminalFuturesapi.scene",
+        "pk": 1,
+        "fields": {
+            "name": "Starting Scene",
+            "sceneText": "I don't have a lot of time, so we need to work quickly. <br/>For trans-dimensional legal reasons, I need you to ${} liability for any and all outcomes of what we're about to attempt",
+            "story":1
+        }
+    },
+
+    {
+        "model": "TerminalFuturesapi.scene",
+        "pk": 2,
+        "fields": {
+            "name": "Again with feeling",
+            "sceneText": "I don't have a lot of time, so we need to work quickly. <br/>For trans-dimensional legal reasons, I need you to ${} liability for any and all outcomes of what we're about to attempt",
+            "story":1
+        }
+    }
+    ]

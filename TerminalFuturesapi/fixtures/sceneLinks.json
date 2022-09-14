@@ -1,0 +1,16 @@
+[
+    {
+        "model": "TerminalFuturesapi.sceneLink",
+        "pk": 1,
+        "fields": {
+            "scene":1,
+            "action": "Open door (the password is 'Bananas')",
+            "challengeText": "What is the password?",
+            "challengeAnswer":"Bananas",
+            "nextScene": 2,
+            "failScene":1
+        }
+    }
+    ]
+
+

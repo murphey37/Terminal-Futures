@@ -1,0 +1,11 @@
+[
+    {
+        "model": "TerminalFuturesapi.userScene",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "sceneLink": 1,
+            "success": true
+        }
+    }
+    ]

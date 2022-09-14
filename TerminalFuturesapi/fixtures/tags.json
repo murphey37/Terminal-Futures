@@ -1,0 +1,47 @@
+[
+    {
+        "model": "TerminalFuturesapi.tag",
+        "pk": 1,
+        "fields": {
+            "label": "Funny"
+
+        }
+    },
+
+    {
+        "model": "TerminalFuturesapi.tag",
+        "pk": 2,
+        "fields": {
+            "label": "Educational"
+
+        }
+    },
+
+    {
+        "model": "TerminalFuturesapi.tag",
+        "pk": 3,
+        "fields": {
+            "label": "Puzzle"
+
+        }
+    },
+
+    {
+        "model": "TerminalFuturesapi.tag",
+        "pk": 4,
+        "fields": {
+            "label": "Scary"
+
+        }
+    },
+
+    {
+        "model": "TerminalFuturesapi.tag",
+        "pk": 5,
+        "fields": {
+            "label": "Mountain Goats"
+
+        }
+    }
+
+    ]

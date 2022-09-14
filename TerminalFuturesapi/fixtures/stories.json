@@ -1,0 +1,13 @@
+[
+    {
+        "model": "TerminalFuturesapi.story",
+        "pk": 1,
+        "fields": {
+            "title": "At the Door",
+            "startScene":1,
+            "user":1
+        }
+    }
+
+    ]
+

@@ -3,8 +3,8 @@
         "model": "TerminalFuturesapi.scene",
         "pk": 1,
         "fields": {
-            "name": "Starting Scene",
-            "sceneText": "I don't have a lot of time, so we need to work quickly. <br/>For trans-dimensional legal reasons, I need you to ${} liability for any and all outcomes of what we're about to attempt",
+            "name": "Opening Scene",
+            "sceneText": "You wake up on the couch. What time is it? The door bell is ringing.",
             "story":1
         }
     },
@@ -13,9 +13,31 @@
         "model": "TerminalFuturesapi.scene",
         "pk": 2,
         "fields": {
-            "name": "Again with feeling",
-            "sceneText": "I don't have a lot of time, so we need to work quickly. <br/>For trans-dimensional legal reasons, I need you to ${} liability for any and all outcomes of what we're about to attempt",
+            "name": "Open Door",
+            "sceneText": "You get up and go to the door. Taking a breath, you open it. Standing before you is legendary singer-songwriter Tracy Chapman. She gives you one (1) reason to stay here and turns right back around.",
+            "story":1
+        }
+    },
+
+    {
+        "model": "TerminalFuturesapi.scene",
+        "pk": 3,
+        "fields": {
+            "name": "Investigate reason",
+            "sceneText": "In your hands, you see a small piece of paper, folded in half. You open it up and see a small note -'All you can save is your soul' - T",
+            "story":1
+        }
+    },
+
+    {
+        "model": "TerminalFuturesapi.scene",
+        "pk": 4,
+        "fields": {
+            "name": "Close Door",
+            "sceneText": "You close the door and sit back down on the couch. You know what you have to do. You pick up the phone to call your parents. It's been a long time since you called.",
             "story":1
         }
     }
+
     ]
+    

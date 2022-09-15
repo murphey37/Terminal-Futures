@@ -4,10 +4,62 @@
         "pk": 1,
         "fields": {
             "scene":1,
-            "action": "Open door (the password is 'Bananas')",
-            "challengeText": "What is the password?",
-            "challengeAnswer":"Bananas",
+            "action": "Open the door",
+            "challengeText": "",
+            "challengeAnswer":"",
             "nextScene": 2,
+            "failScene":1
+        }
+    },
+
+    {
+        "model": "TerminalFuturesapi.sceneLink",
+        "pk": 2,
+        "fields": {
+            "scene":2,
+            "action": "what is the Reason?",
+            "challengeText": "",
+            "challengeAnswer":"",
+            "nextScene": 3,
+            "failScene":2
+        }
+    },
+
+    {
+        "model": "TerminalFuturesapi.sceneLink",
+        "pk": 3,
+        "fields": {
+            "scene":2,
+            "action": "Close the door",
+            "challengeText": "",
+            "challengeAnswer":"",
+            "nextScene": 4,
+            "failScene":2
+        }
+    },
+
+    {
+        "model": "TerminalFuturesapi.sceneLink",
+        "pk": 4,
+        "fields": {
+            "scene":3,
+            "action": "Close the door",
+            "challengeText": "",
+            "challengeAnswer":"",
+            "nextScene": 4,
+            "failScene":3
+        }
+    },
+
+    {
+        "model": "TerminalFuturesapi.sceneLink",
+        "pk": 5,
+        "fields": {
+            "scene":4,
+            "action": "Begin again",
+            "challengeText": "",
+            "challengeAnswer":"",
+            "nextScene": 1,
             "failScene":1
         }
     }

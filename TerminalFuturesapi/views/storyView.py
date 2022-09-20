@@ -4,7 +4,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from django.contrib.auth.models import User
-from TerminalFuturesapi.models import Scene, Story
+from TerminalFuturesapi.models import Scene, Story, SceneLink
 
 
 class StoryView(ViewSet):
@@ -41,15 +41,25 @@ class StoryView(ViewSet):
             Response -- JSON serialized game instance
         """
 
-        scene = Scene.objects.get(pk=request.data["scene"])
-        user = User.objects.get(user=request.auth.user)
+        startingScene = Scene.objects.get(pk= 1)
+        user = request.auth.user
+
 
         story = Story.objects.create(
             title=request.data["title"],
-            startScene=scene,
+            startScene=startingScene,
             user=user
         )
+
+        newStartingScene=Scene.objects.create(
+                story=story,
+                name=request.data["name"],
+                sceneText=request.data["sceneText"]
+            )
+        story.startScene = newStartingScene
+        story.save()
         serializer = StorySerializer(story)
+
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
     def update(self, request, pk):
@@ -64,7 +74,7 @@ class StoryView(ViewSet):
         story.title = request.data["title"]
         story.startScene = scene
         story.user = user
-        scene.save()
+        story.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
@@ -80,4 +90,13 @@ class StorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Story
         fields = ('id', 'title', 'startScene','user')
+        depth = 1
+
+class SceneSerializer(serializers.ModelSerializer):
+    """JSON serializer for game types
+    """
+    story = StorySerializer(many=False)
+    class Meta:
+        model = Scene
+        fields = ('id', 'name', 'sceneText','story')
         depth = 1

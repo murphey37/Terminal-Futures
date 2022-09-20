@@ -4,7 +4,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from django.contrib.auth.models import User
-from TerminalFuturesapi.models import Scene, Story
+from TerminalFuturesapi.models import Scene, Story, SceneLink, sceneLink
 
 
 class SceneView(ViewSet):

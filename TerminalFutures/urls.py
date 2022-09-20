@@ -37,13 +37,6 @@ urlpatterns = [
 # from levelupapi.views import GameTypeView, EventView, GameView
 
 
-# 
-
-
-urlpatterns = [
-    
-    
-]
 
 #router.register(r'gametypes', GameTypeView, 'gametype')
 # router.register(r'events', EventView, 'event')

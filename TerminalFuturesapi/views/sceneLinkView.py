@@ -41,13 +41,17 @@ class SceneLinkView(ViewSet):
         """
 
         scene = Scene.objects.get(pk=request.data["scene"])
-
+        nextScene = Scene.objects.get(pk=request.data["nextScene"])
+        try:
+            failScene = Scene.objects.get(pk=request.data["failScene"])
+        except Scene.DoesNotExist:
+            failScene = None
         sceneLink = SceneLink.objects.create(
             action=request.data["action"],
             challengeText=request.data["challengeText"],
             challengeAnswer=request.data["challengeAnswer"],
-            failScene=scene,
-            nextScene=scene,
+            failScene=failScene,
+            nextScene=nextScene,
             scene=scene
         )
         serializer = SceneLinkSerializer(sceneLink)
@@ -73,7 +77,10 @@ class SceneLinkView(ViewSet):
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
     def destroy(self, request, pk):
-        sceneLink = SceneLink.objects.get(pk=pk)
+
+        scene = Scene.objects.get(pk=pk)
+
+        sceneLink = SceneLink.objects.all().filter(scene=scene)
         sceneLink.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
             

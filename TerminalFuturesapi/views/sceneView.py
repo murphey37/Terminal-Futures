@@ -77,5 +77,5 @@ class SceneSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Scene
-        fields = ('id', 'name', 'sceneText','story')
+        fields = ('id', 'name', 'sceneText','story', 'scene_links')
         depth = 1

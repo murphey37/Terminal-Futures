@@ -46,6 +46,10 @@ class SceneLinkView(ViewSet):
             failScene = Scene.objects.get(pk=request.data["failScene"])
         except Scene.DoesNotExist:
             failScene = None
+        try:
+            nextScene = Scene.objects.get(pk=request.data["nextScene"])
+        except Scene.DoesNotExist:
+            nextScene = None
         sceneLink = SceneLink.objects.create(
             action=request.data["action"],
             challengeText=request.data["challengeText"],

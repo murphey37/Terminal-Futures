@@ -12,7 +12,7 @@ cd into the corresponding directory `cd Terminal-Futures-Server`
 
 Client side located at [Client Side](https://github.com/murphey37/Terminal-Futures-Client) with instructions to clone and run
 
-pipenv is a dependency, should include link to instillation instructions
+Before running, you must have Python installed. If you do not have Python already installed, please see [installation instructions](https://pypi.org/project/pipenv/).
 
 Open the shell `pipenv shell`
 

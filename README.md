@@ -12,7 +12,13 @@ cd into the corresponding directory `cd Terminal-Futures-Server`
 
 Client side located at [Client Side](https://github.com/murphey37/Terminal-Futures-Client) with instructions to clone and run
 
+pipenv is a dependency, should include link to instillation instructions
+
 Open the shell `pipenv shell`
+
+Install pip environment `pipenv install`
+
+Perform migrations `python manage.py migrate`
 
 Run the server `python3 manage.py runserver`
 

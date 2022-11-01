@@ -19,7 +19,7 @@ Run the server `python3 manage.py runserver`
 **Tech Stack**
 
 - HTML
-- CSS,
+- CSS
 - Mermaid
 - JavaScript
 - React

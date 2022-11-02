@@ -5,6 +5,7 @@
             "name": "Python: Django",
             "type": "python",
             "request": "launch",
+            //"url": "http://localhost:3000/login",
             "program": "${workspaceFolder}/manage.py",
             "args": ["runserver"],
             "django": true,

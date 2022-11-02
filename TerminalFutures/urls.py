@@ -30,15 +30,3 @@ urlpatterns = [
     path('login', login_user),
     path('', include(router.urls))
 ]
-
-
-
-
-# from levelupapi.views import GameTypeView, EventView, GameView
-
-
-
-#router.register(r'gametypes', GameTypeView, 'gametype')
-# router.register(r'events', EventView, 'event')
-# router.register(r'games', GameView, 'game')
-# path('', include('levelupreports.urls')),

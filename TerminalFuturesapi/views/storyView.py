@@ -41,13 +41,13 @@ class StoryView(ViewSet):
             Response -- JSON serialized game instance
         """
 
-        startingScene = Scene.objects.get(pk= 1)
+        # startingScene = Scene.objects.get(pk= 1)
         user = request.auth.user
 
 
         story = Story.objects.create(
             title=request.data["title"],
-            startScene=startingScene,
+            startScene=None,
             user=user
         )
 
